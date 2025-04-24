@@ -8,7 +8,7 @@ from .mongo_database import MongoDatabase
 T = TypeVar('T')
 
 
-class MongoRepository(BaseRepository[T]):
+class MongoRepository(T):
     """MongoDB implementation of the BaseRepository interface.
     
     Provides CRUD operations for MongoDB collections.
